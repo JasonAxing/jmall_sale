@@ -1,0 +1,8 @@
+package com.jmall.server;
+
+import javax.jws.WebService;
+
+@WebService
+public interface TestServerInf {
+	public String ping(String hello);
+}
