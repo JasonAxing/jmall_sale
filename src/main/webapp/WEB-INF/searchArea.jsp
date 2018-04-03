@@ -13,11 +13,11 @@
 <script type="text/javascript">
 	function b(){}
 </script>
-<title>硅谷商城</title>
+<title>金毛商城</title>
 </head>
 <body>
 	<div class="search">
-		<div class="logo"><img src="./images/logo.jpg" alt=""></div>
+		<div class="logo"></div>
 		<div class="search_on">
 			<div class="se">
 				<input type="text" name="search" class="lf">
@@ -30,31 +30,7 @@
 				<a href="">玉兰油</a>
 			</div>
 		</div>
-		<div class="card">
-			<a href="">购物车<div class="num">0</div></a>
-			
-			<!--购物车商品-->
-			<div class="cart_pro">
-				<h6>最新加入的商品</h6>
-				<div class="one">
-					<img src="images/lec1.png"/>
-					<span class="one_name">
-						商品名称商品名称商品名称商品名称
-					</span>
-					<span class="one_prece">
-						<b>￥20000</b><br />
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除
-					</span>
-				</div>
-	
-				<div class="gobottom">
-					共<span>2</span>件商品&nbsp;&nbsp;&nbsp;&nbsp;
-					共计￥<span>20000</span>
-					<button class="goprice">去购物车</button>
-				</div>
-			</div>
-		
-		</div>
+		<jsp:include page="miniCart.jsp"></jsp:include>
 	</div>
 
 </body>

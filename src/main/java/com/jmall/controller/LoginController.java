@@ -29,9 +29,6 @@ import com.jmall.util.MyJsonUtil;
 public class LoginController {
 
 	@Autowired
-	LoginMapper loginMapper;
-
-	@Autowired
 	LoginServerInf loginServerInf;
 	
 	@Autowired
@@ -50,6 +47,7 @@ public class LoginController {
 		T_MALL_USER_ACCOUNT select_user = new T_MALL_USER_ACCOUNT(); //loginMapper.select_user(user);
 
 		String loginJson = "";
+		dataSource_type = "1";
 		if (dataSource_type.equals("1")) {
 			loginJson = loginServerInf.login(user);
 			testServerInf.ping("hello");
@@ -77,7 +75,6 @@ public class LoginController {
 				cookie2.setMaxAge(60 * 60 * 24);
 				response.addCookie(cookie2);
 			} catch (UnsupportedEncodingException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 

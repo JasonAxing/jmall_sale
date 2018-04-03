@@ -18,9 +18,13 @@
 <title></title>
 </head>
 <body>
-	<jsp:include page="attrList.jsp"></jsp:include>
+	<jsp:include page="header.jsp"></jsp:include>
+	<jsp:include page="searchArea.jsp"></jsp:include>
+	<jsp:include page="attrList.jsp"/>
 	<hr>
-	<jsp:include page="skuList.jsp"></jsp:include>
+	<div id = "skuListInner">
+		<jsp:include page="skuList.jsp"/>
+	</div>
 	
 </body>
 </html>
