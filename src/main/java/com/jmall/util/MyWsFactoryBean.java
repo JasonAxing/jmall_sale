@@ -36,19 +36,16 @@ public class MyWsFactoryBean<T> implements FactoryBean<T> {
 
 	@Override
 	public T getObject() throws Exception {
-		// TODO Auto-generated method stub
 		return getMyWs(url, this.t);
 	}
 
 	@Override
 	public Class<?> getObjectType() {
-		// TODO Auto-generated method stub
 		return this.t;
 	}
 
 	@Override
 	public boolean isSingleton() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

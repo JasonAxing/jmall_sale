@@ -13,7 +13,7 @@
 <script type="text/javascript">
 	function b(){}
 </script>
-<title>硅谷商城</title>
+<title>金毛商城</title>
 </head>
 <body>
 	<h6>最新加入的商品</h6>

@@ -47,6 +47,11 @@
 		<property name="t" value="com.jmall.server.LoginServerInf"></property>
 	</bean>
 	
+	<bean id="addressServerInf" class="com.jmall.util.MyWsFactoryBean">
+		<property name="url" value="${address_url}"></property>
+		<property name="t" value="com.jmall.server.AddressServerInf"></property>
+	</bean>
+	
 	<bean id="testServerInf" class="com.jmall.util.MyWsFactoryBean">
 		<property name="url" value="${test_url}"></property>
 		<property name="t" value="com.jmall.server.TestServerInf"></property>

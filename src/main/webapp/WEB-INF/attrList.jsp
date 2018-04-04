@@ -35,7 +35,7 @@
 		}); 
 	}
 </script>
-<title></title>
+<title>金毛商城</title>
 </head>
 <body>
 	<div id = "paramArea"></div>

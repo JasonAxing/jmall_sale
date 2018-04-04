@@ -33,7 +33,7 @@
 		});
 	}
 </script>
-<title>硅谷商城</title>
+<title>金毛商城</title>
 </head>
 <body>
 	<div class="menu">

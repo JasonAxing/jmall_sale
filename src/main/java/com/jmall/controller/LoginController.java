@@ -16,6 +16,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jmall.bean.T_MALL_SHOPPINGCAR;
 import com.jmall.bean.T_MALL_USER_ACCOUNT;
@@ -38,7 +39,8 @@ public class LoginController {
 	TestServerInf testServerInf;
 
 	@RequestMapping("login")
-	public String goto_login(@CookieValue(value = "list_cart_cookie", required = false) String list_cart_cookie,
+	public String goto_login(@RequestParam(value="redirect",required=false) String redirect,
+			@CookieValue(value = "list_cart_cookie", required = false) String list_cart_cookie,
 			HttpServletResponse response, HttpSession session, T_MALL_USER_ACCOUNT user, HttpServletRequest request,
 			String dataSource_type, ModelMap map) {
 
@@ -83,7 +85,11 @@ public class LoginController {
 
 		}
 
-		return "redirect:/index.do";
+		if(redirect == null){
+			return "redirect:/index.do";
+		}else{
+			return "redirect:/" + redirect;
+		}
 	}
 
 	private void combine_cart(T_MALL_USER_ACCOUNT user, HttpServletResponse response, HttpSession session,

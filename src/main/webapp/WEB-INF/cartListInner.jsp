@@ -11,7 +11,9 @@
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript">
-	function b(){}
+	function goto_check(){
+		$("#goto_check").submit();
+	}
 </script>
 <title>金毛商城</title>
 </head>
@@ -48,8 +50,10 @@
 	</div>
 	
 	<div class="Cprice">
-		<div class="price">总价：${sum}</div>
-		<div class="jiesuan">结算</div>
+		<form id="goto_check" action="goto_checkOrder.do">
+			<div class="price">总价：${sum}</div>
+			<div class="jiesuan" onclick="goto_check()">结算</div>
+		</form>
 	</div>
 </body>
 </html>

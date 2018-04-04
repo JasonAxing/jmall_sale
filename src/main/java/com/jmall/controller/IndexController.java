@@ -37,6 +37,13 @@ public class IndexController {
 		map.put("flbh2", flbh2);
 		return "list";
 	}
+	
+	
+	@RequestMapping("goto_login_checkOrder")
+	public String goto_login_checkOrder(HttpServletRequest request, ModelMap map) {
+
+		return "loginCheckOrder";
+	}
 
 	@RequestMapping("goto_login")
 	public String goto_login(HttpServletRequest request, ModelMap map) {

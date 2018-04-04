@@ -15,7 +15,7 @@
 		
 	});
 </script>
-<title></title>
+<title>金毛商城</title>
 </head>
 <body>
 	<c:forEach items="${list_sku}" var="sku">
